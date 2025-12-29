@@ -16,6 +16,11 @@
       "name": "readwise",
       "source": "./readwise-plugin",
       "description": "Comprehensive Readwise integration - search highlights, save content, analyze reading data, export highlights"
+    },
+    {
+      "name": "obsidian",
+      "source": "./obsidian-plugin",
+      "description": "AI-powered Obsidian.md vault management - create notes, search vault, suggest links, autonomous assistant"
     }
   ]
 }

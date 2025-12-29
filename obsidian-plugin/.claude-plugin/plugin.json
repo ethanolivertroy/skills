@@ -1,0 +1,16 @@
+{
+  "name": "obsidian",
+  "version": "0.1.0",
+  "description": "Obsidian.md vault management with AI-powered features",
+  "author": "Ethan Troy",
+  "commands": [
+    "commands/create-note.md",
+    "commands/search.md",
+    "commands/list-notes.md",
+    "commands/suggest-links.md",
+    "commands/ask.md"
+  ],
+  "skills": [
+    "skills/obsidian-assistant"
+  ]
+}

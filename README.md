@@ -10,6 +10,7 @@ My personal collection of Claude Code plugins for enhancing productivity and wor
 |--------|-------------|
 | [ghost-content-plugin](./ghost-content-plugin/) | Manage your Ghost blog content - create posts, sync drafts, push changes |
 | [readwise-plugin](./readwise-plugin/) | Comprehensive Readwise integration - search your highlights, save content, analyze reading data, export highlights |
+| [obsidian-plugin](./obsidian-plugin/) | AI-powered Obsidian.md vault management - create notes, search vault, suggest links, autonomous assistant |
 
 ## My Other Claude Code Projects
 
@@ -30,6 +31,9 @@ My personal collection of Claude Code plugins for enhancing productivity and wor
 
 # Install Readwise plugin
 /plugin install readwise@ethanolivertroy-plugins
+
+# Install Obsidian plugin
+/plugin install obsidian@ethanolivertroy-plugins
 ```
 
 ### Local Development
@@ -51,6 +55,15 @@ cd claude-plugins/readwise-plugin/server
 npm install && npm run build
 cd ../..
 claude --plugin-dir ./readwise-plugin
+```
+
+**Obsidian Plugin:**
+```bash
+git clone https://github.com/ethanolivertroy/claude-plugins.git
+cd claude-plugins/obsidian-plugin
+npm install
+cd ..
+claude --plugin-dir ./obsidian-plugin
 ```
 
 ## About

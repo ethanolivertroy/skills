@@ -1,0 +1,17 @@
+{
+  "name": "obsidian-plugin",
+  "version": "0.1.0",
+  "description": "Claude Code plugin for Obsidian.md",
+  "type": "module",
+  "scripts": {
+    "create": "node scripts/create-note.js",
+    "search": "node scripts/search.js",
+    "list": "node scripts/list-notes.js",
+    "suggest": "node scripts/suggest-links.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "js-yaml": "^4.1.0",
+    "gray-matter": "^4.0.3"
+  }
+}
