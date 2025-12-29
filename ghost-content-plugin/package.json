@@ -1,0 +1,22 @@
+{
+  "name": "ghost-content-plugin",
+  "version": "1.0.0",
+  "description": "Claude Code plugin for managing Ghost blog content",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/pull-drafts.js",
+    "pull-drafts": "node scripts/pull-drafts.js",
+    "push-drafts": "node scripts/push-drafts.js",
+    "new-post": "node scripts/new-post.js"
+  },
+  "keywords": [
+    "ghost",
+    "cms",
+    "claude-code-plugin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.1"
+  }
+}

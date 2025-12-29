@@ -1,0 +1,10 @@
+{
+  "name": "readwise",
+  "description": "Manage Readwise highlights and Reader documents - search, save, analyze, and export your reading data",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ethan Troy"
+  },
+  "homepage": "https://github.com/ethanolivertroy/claude-plugins/tree/main/readwise-plugin",
+  "repository": "https://github.com/ethanolivertroy/claude-plugins"
+}

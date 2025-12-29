@@ -1,0 +1,9 @@
+{
+  "readwise": {
+    "command": "node",
+    "args": ["server/dist/index.js"],
+    "env": {
+      "READWISE_TOKEN": "${READWISE_TOKEN}"
+    }
+  }
+}
