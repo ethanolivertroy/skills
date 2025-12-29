@@ -24,7 +24,8 @@ My personal collection of Claude Code plugins for enhancing productivity and wor
 
 ```bash
 # Add this marketplace (one-time)
-/plugin marketplace add ethanolivertroy/claude-plugins
+# Note: Use HTTPS URL if you don't have SSH keys configured
+/plugin marketplace add https://github.com/ethanolivertroy/claude-plugins
 
 # Install Ghost plugin
 /plugin install ghost@ethanolivertroy-plugins
