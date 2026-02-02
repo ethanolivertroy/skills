@@ -1,0 +1,8 @@
+{
+  "name": "linear-project-updates",
+  "description": "Adds create_project_update tool for posting to Linear project Updates tab via GraphQL API",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ethan Troy"
+  }
+}
