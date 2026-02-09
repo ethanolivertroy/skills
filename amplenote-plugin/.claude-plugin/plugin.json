@@ -4,5 +4,14 @@
   "description": "Amplenote integration - create notes, manage tasks, search your knowledge base",
   "author": {
     "name": "Ethan Troy"
-  }
+  },
+  "commands": [
+    "commands/auth.md",
+    "commands/create-note.md",
+    "commands/create-task.md",
+    "commands/search.md"
+  ],
+  "skills": [
+    "skills/amplenote-assistant"
+  ]
 }

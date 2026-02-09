@@ -4,5 +4,8 @@
   "version": "1.0.0",
   "author": {
     "name": "Ethan Troy"
-  }
+  },
+  "skills": [
+    "skills/image-generator"
+  ]
 }

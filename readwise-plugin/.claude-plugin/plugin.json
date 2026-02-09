@@ -6,5 +6,16 @@
     "name": "Ethan Troy"
   },
   "homepage": "https://github.com/ethanolivertroy/claude-plugins/tree/main/readwise-plugin",
-  "repository": "https://github.com/ethanolivertroy/claude-plugins"
+  "repository": "https://github.com/ethanolivertroy/claude-plugins",
+  "commands": [
+    "commands/highlights.md",
+    "commands/documents.md",
+    "commands/search.md",
+    "commands/save.md",
+    "commands/daily-review.md",
+    "commands/export.md"
+  ],
+  "skills": [
+    "skills/readwise-assistant"
+  ]
 }

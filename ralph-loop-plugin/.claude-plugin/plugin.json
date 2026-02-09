@@ -4,5 +4,10 @@
   "author": {
     "name": "Anthropic",
     "email": "support@anthropic.com"
-  }
+  },
+  "commands": [
+    "commands/ralph-loop.md",
+    "commands/help.md",
+    "commands/cancel-ralph.md"
+  ]
 }

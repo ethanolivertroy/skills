@@ -12,9 +12,9 @@ My personal collection of Claude Code plugins for enhancing productivity and wor
 | [readwise-plugin](./readwise-plugin/) | Comprehensive Readwise integration - search your highlights, save content, analyze reading data, export highlights |
 | [obsidian-plugin](./obsidian-plugin/) | AI-powered Obsidian.md vault management - create notes, search vault, suggest links, autonomous assistant |
 | [ralph-loop-plugin](./ralph-loop-plugin/) | Continuous self-referential AI loops for iterative development |
-| [typescript-lsp-plugin](./typescript-lsp-plugin/) | TypeScript/JavaScript language server for code intelligence |
-| [rust-analyzer-lsp-plugin](./rust-analyzer-lsp-plugin/) | Rust language server for code intelligence and analysis |
 | [amplenote-plugin](./amplenote-plugin/) | Amplenote integration - create notes, manage tasks, search your knowledge base |
+| [image-generator-plugin](./image-generator-plugin/) | Generate and edit images using Gemini's Nano Banana Pro model |
+| [exif-stripper-plugin](./exif-stripper-plugin/) | Strip sensitive EXIF metadata from images before publishing |
 
 ## Installation
 
@@ -37,14 +37,14 @@ My personal collection of Claude Code plugins for enhancing productivity and wor
 # Install Ralph Loop plugin
 /plugin install ralph-loop@ethanolivertroy-plugins
 
-# Install TypeScript LSP plugin
-/plugin install typescript-lsp@ethanolivertroy-plugins
-
-# Install Rust Analyzer LSP plugin
-/plugin install rust-analyzer-lsp@ethanolivertroy-plugins
-
 # Install Amplenote plugin
 /plugin install amplenote@ethanolivertroy-plugins
+
+# Install Image Generator plugin
+/plugin install image-generator@ethanolivertroy-plugins
+
+# Install EXIF Stripper plugin
+/plugin install exif-stripper@ethanolivertroy-plugins
 ```
 
 ### Local Development
@@ -75,6 +75,24 @@ cd claude-plugins/obsidian-plugin
 npm install
 cd ..
 claude --plugin-dir ./obsidian-plugin
+```
+
+**Image Generator Plugin:**
+```bash
+git clone https://github.com/ethanolivertroy/claude-plugins.git
+cd claude-plugins/image-generator-plugin
+npm install
+cd ..
+claude --plugin-dir ./image-generator-plugin
+```
+
+**EXIF Stripper Plugin:**
+```bash
+git clone https://github.com/ethanolivertroy/claude-plugins.git
+cd claude-plugins/exif-stripper-plugin
+npm install
+cd ..
+claude --plugin-dir ./exif-stripper-plugin
 ```
 
 ## About

@@ -28,16 +28,6 @@
       "description": "Continuous self-referential AI loops for iterative development"
     },
     {
-      "name": "typescript-lsp",
-      "source": "./typescript-lsp-plugin",
-      "description": "TypeScript/JavaScript language server for code intelligence"
-    },
-    {
-      "name": "rust-analyzer-lsp",
-      "source": "./rust-analyzer-lsp-plugin",
-      "description": "Rust language server for code intelligence and analysis"
-    },
-    {
       "name": "amplenote",
       "source": "./amplenote-plugin",
       "description": "Amplenote integration - create notes, manage tasks, search your knowledge base"
@@ -46,6 +36,11 @@
       "name": "image-generator",
       "source": "./image-generator-plugin",
       "description": "Generate and edit images using Gemini's Nano Banana Pro model"
+    },
+    {
+      "name": "exif-stripper",
+      "source": "./exif-stripper-plugin",
+      "description": "Strip sensitive EXIF metadata from images before publishing"
     }
   ]
 }

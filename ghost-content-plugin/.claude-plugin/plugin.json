@@ -4,5 +4,13 @@
   "version": "1.0.0",
   "author": {
     "name": "Ethan Troy"
-  }
+  },
+  "commands": [
+    "commands/new-post.md",
+    "commands/sync.md",
+    "commands/push.md"
+  ],
+  "skills": [
+    "skills/ghost-content-manager"
+  ]
 }
