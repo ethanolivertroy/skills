@@ -2,6 +2,8 @@
 
 # My Claude Code Plugins
 
+> **Disclaimer:** This is an independent, community-driven project and is not affiliated with, endorsed by, or officially associated with Anthropic or Claude. The author is an independent developer contributing to open source and demonstrating how these tools can be used in real-world workflows. Claude, Anthropic, and any related marks are property of their respective owners.
+
 My personal collection of Claude Code plugins for enhancing productivity and workflow automation.
 
 ## My Plugins
