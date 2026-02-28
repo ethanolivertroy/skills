@@ -1,0 +1,13 @@
+{
+  "name": "ghost-content-manager",
+  "description": "Manage Ghost blog content - create posts, sync drafts, push changes",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ethan Troy"
+  },
+  "commands": [
+    "commands/new-post.md",
+    "commands/sync.md",
+    "commands/push.md"
+  ]
+}

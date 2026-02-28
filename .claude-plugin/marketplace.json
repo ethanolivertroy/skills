@@ -1,0 +1,41 @@
+{
+  "name": "ethanolivertroy/skills",
+  "owner": {
+    "name": "Ethan Troy"
+  },
+  "metadata": {
+    "description": "Agent skills and Claude Code plugins by Ethan Troy"
+  },
+  "plugins": [
+    {
+      "name": "ghost-content-manager",
+      "source": "./ghost-content-manager",
+      "description": "Manage Ghost blog content - create posts, sync drafts, push changes"
+    },
+    {
+      "name": "readwise-assistant",
+      "source": "./readwise-assistant",
+      "description": "Comprehensive Readwise integration - search highlights, save content, analyze reading data, export highlights"
+    },
+    {
+      "name": "obsidian-skills",
+      "source": "./obsidian-skills",
+      "description": "Obsidian vault skills - create and edit Markdown, Bases, and Canvas files"
+    },
+    {
+      "name": "ralph-loop",
+      "source": "./ralph-loop",
+      "description": "Continuous self-referential AI loops for iterative development"
+    },
+    {
+      "name": "image-generator",
+      "source": "./image-generator",
+      "description": "Generate and edit images using Gemini image models"
+    },
+    {
+      "name": "exif-stripper",
+      "source": "./exif-stripper",
+      "description": "Strip sensitive EXIF metadata from images before publishing"
+    }
+  ]
+}

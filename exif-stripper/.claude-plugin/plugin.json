@@ -1,0 +1,13 @@
+{
+  "name": "exif-stripper",
+  "description": "Strip sensitive EXIF metadata from images before publishing. Auto-strips on commit, or use /exif:strip manually.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ethan Troy"
+  },
+  "repository": "https://github.com/ethanolivertroy/skills",
+  "commands": [
+    "commands/strip.md",
+    "commands/check.md"
+  ]
+}

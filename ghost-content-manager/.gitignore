@@ -1,0 +1,9 @@
+# Environment variables (contains API credentials)
+.env
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Local content (user's personal blog drafts)
+content/

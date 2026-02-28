@@ -1,0 +1,8 @@
+{
+  "name": "image-generator",
+  "description": "Generate and edit images using Gemini image models",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ethan Troy"
+  }
+}

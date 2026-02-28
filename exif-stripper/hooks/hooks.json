@@ -1,0 +1,17 @@
+{
+  "description": "Auto-strip EXIF metadata from staged images before git commit",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/pre-commit-strip.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
