@@ -1,0 +1,3 @@
+[submodule "obsidian-assistant"]
+	path = obsidian-assistant
+	url = https://github.com/kepano/obsidian-skills
