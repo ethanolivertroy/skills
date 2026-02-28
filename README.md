@@ -1,109 +1,61 @@
-![Claude Code Plugins Banner](./claude-plugins.jpg)
-
-# My Claude Code Plugins
-
-> **Disclaimer:** This is an independent, community-driven project and is not affiliated with, endorsed by, or officially associated with Anthropic or Claude. The author is an independent developer contributing to open source and demonstrating how these tools can be used in real-world workflows. Claude, Anthropic, and any related marks are property of their respective owners.
-
-My personal collection of Claude Code plugins for enhancing productivity and workflow automation.
-
-## My Plugins
-
-| Plugin | Description |
-|--------|-------------|
-| [ghost-content-plugin](./ghost-content-plugin/) | Manage your Ghost blog content - create posts, sync drafts, push changes |
-| [readwise-plugin](./readwise-plugin/) | Comprehensive Readwise integration - search your highlights, save content, analyze reading data, export highlights |
-| [obsidian-plugin](./obsidian-plugin/) | AI-powered Obsidian.md vault management - create notes, search vault, suggest links, autonomous assistant |
-| [ralph-loop-plugin](./ralph-loop-plugin/) | Continuous self-referential AI loops for iterative development |
-| [amplenote-plugin](./amplenote-plugin/) | Amplenote integration - create notes, manage tasks, search your knowledge base |
-| [image-generator-plugin](./image-generator-plugin/) | Generate and edit images using Gemini's Nano Banana Pro model |
-| [exif-stripper-plugin](./exif-stripper-plugin/) | Strip sensitive EXIF metadata from images before publishing |
+Agent skills and Claude Code plugins for productivity and workflow automation. These skills follow the [Agent Skills specification](https://agentskills.io/specification) and are compatible with Claude Code, Codex CLI, and OpenCode.
 
 ## Installation
 
-### From GitHub (Recommended)
+### Marketplace
 
-```bash
-# Add this marketplace (one-time)
-# Note: Use HTTPS URL if you don't have SSH keys configured
-/plugin marketplace add https://github.com/ethanolivertroy/claude-plugins
-
-# Install Ghost plugin
-/plugin install ghost@ethanolivertroy-plugins
-
-# Install Readwise plugin
-/plugin install readwise@ethanolivertroy-plugins
-
-# Install Obsidian plugin
-/plugin install obsidian@ethanolivertroy-plugins
-
-# Install Ralph Loop plugin
-/plugin install ralph-loop@ethanolivertroy-plugins
-
-# Install Amplenote plugin
-/plugin install amplenote@ethanolivertroy-plugins
-
-# Install Image Generator plugin
-/plugin install image-generator@ethanolivertroy-plugins
-
-# Install EXIF Stripper plugin
-/plugin install exif-stripper@ethanolivertroy-plugins
+```
+/plugin marketplace add ethanolivertroy/skills
+/plugin install <skill-name>@skills
 ```
 
-### Local Development
+### npx skills
 
-**Ghost Plugin:**
-```bash
-git clone https://github.com/ethanolivertroy/claude-plugins.git
-cd claude-plugins/ghost-content-plugin
-npm install
-cd ..
-claude --plugin-dir ./ghost-content-plugin
+```
+npx skills add git@github.com:ethanolivertroy/skills.git
 ```
 
-**Readwise Plugin:**
-```bash
-git clone https://github.com/ethanolivertroy/claude-plugins.git
-# Build the MCP server first
-cd claude-plugins/readwise-plugin/server
-npm install && npm run build
-cd ../..
-claude --plugin-dir ./readwise-plugin
+### Manually
+
+#### Claude Code
+
+Add skill folders to `~/.claude/plugins/` (for plugins with commands and hooks) or copy `SKILL.md` into an existing plugin's `skills/` folder.
+
+```sh
+git clone https://github.com/ethanolivertroy/skills.git
 ```
 
-**Obsidian Plugin:**
-```bash
-git clone https://github.com/ethanolivertroy/claude-plugins.git
-cd claude-plugins/obsidian-plugin
-npm install
-cd ..
-claude --plugin-dir ./obsidian-plugin
+See the [Claude Code skills documentation](https://docs.anthropic.com/en/docs/claude-code/skills-overview) for details.
+
+#### Codex CLI
+
+Copy skill directories into your Codex skills path (typically `~/.codex/skills/`).
+
+See the [Agent Skills specification](https://agentskills.io/specification) for the standard skill format.
+
+#### OpenCode
+
+Clone the repo into the OpenCode skills directory:
+
+```sh
+git clone https://github.com/ethanolivertroy/skills.git ~/.opencode/skills/ethanolivertroy-skills
 ```
 
-**Image Generator Plugin:**
-```bash
-git clone https://github.com/ethanolivertroy/claude-plugins.git
-cd claude-plugins/image-generator-plugin
-npm install
-cd ..
-claude --plugin-dir ./image-generator-plugin
-```
+OpenCode auto-discovers all `SKILL.md` files under `~/.opencode/skills/`. No config changes needed — skills become available after restarting OpenCode.
 
-**EXIF Stripper Plugin:**
-```bash
-git clone https://github.com/ethanolivertroy/claude-plugins.git
-cd claude-plugins/exif-stripper-plugin
-npm install
-cd ..
-claude --plugin-dir ./exif-stripper-plugin
-```
+## Skills
 
-## About
+| Skill | Description |
+|-------|-------------|
+| [done](./done) | Capture session decisions, code changes, and follow-ups as a searchable Obsidian note |
+| [exif-stripper](./exif-stripper) | Strip sensitive EXIF metadata from images before publishing to the web |
+| [ghost-content-manager](./ghost-content-manager) | Manage Ghost blog drafts — create posts, sync, and push changes |
+| [image-generator](./image-generator) | Generate and edit images using Gemini image models |
+| [made-to-stick](./made-to-stick) | Apply the SUCCESs framework to make ideas, copy, and content more memorable |
+| [obsidian-assistant](./obsidian-assistant) | Obsidian vault skills via [@kepano/obsidian-skills](https://github.com/kepano/obsidian-skills) |
+| [ralph-loop](./ralph-loop) | Continuous self-referential AI loops for iterative development |
+| [readwise-assistant](./readwise-assistant) | Search highlights, save articles, and analyze reading data via Readwise |
 
-These are my personal Claude Code plugins that I've built to streamline my workflow. Feel free to use them as inspiration for your own plugins!
+---
 
-**Author**: Ethan Troy
-**GitHub**: [@ethanolivertroy](https://github.com/ethanolivertroy)
-
-## License
-
-MIT
+> **Disclaimer:** This is an independent, community-driven project and is not affiliated with, endorsed by, or officially associated with Anthropic or Claude. Claude, Anthropic, and any related marks are property of their respective owners.
